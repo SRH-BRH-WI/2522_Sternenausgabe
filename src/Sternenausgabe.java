@@ -23,6 +23,8 @@ public class Sternenausgabe {
         int anzahl = eingabe.nextInt();
 
         for (int anzahlSterneProZeile=1; anzahlSterneProZeile<=anzahl; anzahlSterneProZeile++) {
+            for (int space=0; space < anzahl-anzahlSterneProZeile; space++)
+                System.out.print(" ");
             for (int sterne=0; sterne < anzahlSterneProZeile; sterne++)
                 System.out.print(" *");
             System.out.println();
